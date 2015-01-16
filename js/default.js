@@ -181,10 +181,10 @@ function addObjectsToScene() { // Add your objects here
         plutoGeometry = new THREE.SphereGeometry(0.17, 20, 20);
 
     //Rings
-    var saturnRingGeometry1 = new THREE.RingGeometry( 2.92, 2.94, 20),
-        saturnRingGeometry2 = new THREE.RingGeometry( 3.00, 3.20, 20),
-        saturnRingGeometry3 = new THREE.RingGeometry( 3.20, 3.22, 20),
-        saturnRingGeometry4 = new THREE.RingGeometry( 3.24, 3.27, 20);
+    var saturnRingGeometry1 = new THREE.RingGeometry( 3.24, 3.54, 20),
+        saturnRingGeometry2 = new THREE.RingGeometry( 3.60, 4.20, 20),
+        saturnRingGeometry3 = new THREE.RingGeometry( 4.20, 4.62, 20),
+        saturnRingGeometry4 = new THREE.RingGeometry( 4.64, 5.00, 20);
 
     //MATERIALS
     //Planets
@@ -247,7 +247,7 @@ function addObjectsToScene() { // Add your objects here
                             "ambient": '#7E7666',
                             "emissive":'#7E7666',
                             "transparent": true,
-                            "opacity": 0.4
+                            "opacity": 1
                         }),
         saturnRingMaterial2 = new THREE.MeshLambertMaterial(
                         {
@@ -256,7 +256,7 @@ function addObjectsToScene() { // Add your objects here
                             "ambient": '#FDEECE',
                             "emissive":'#FDEECE',
                             "transparent": true,
-                            "opacity": 0.3
+                            "opacity": 0.4
                         }),
         saturnRingMaterial3 = new THREE.MeshLambertMaterial(
                         {
@@ -265,7 +265,7 @@ function addObjectsToScene() { // Add your objects here
                             "ambient": '#FDEECE',
                             "emissive":'#FDEECE',
                             "transparent": true,
-                            "opacity": 0.2
+                            "opacity": 0.6
                         }),
         saturnRingMaterial4 = new THREE.MeshLambertMaterial(
                         {
@@ -274,7 +274,7 @@ function addObjectsToScene() { // Add your objects here
                             "ambient": '#BDB29A',
                             "emissive":'#BDB29A',
                             "transparent": true,
-                            "opacity": 0.9
+                            "opacity": 1
                         });
         
     //OBJECTS
