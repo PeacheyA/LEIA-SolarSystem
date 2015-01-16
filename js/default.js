@@ -119,8 +119,8 @@ function animate() {
 
     //Saturn
     //Orbit
-    saturn.position.x = OrbitCalculationX(0.034, 24.0);
-    saturn.position.z = OrbitCalculationZ(0.034, 24.0);
+    saturn.position.x = OrbitCalculationX(0.034, 27.0);
+    saturn.position.z = OrbitCalculationZ(0.034, 27.0);
     saturn.position.y = OrbitInclination(0.034, 2.50);
     //Axial Tilt
     saturn.rotation.x = 0.2;
@@ -129,22 +129,22 @@ function animate() {
 
     //Uranus=
     //Orbit
-    uranus.position.x = OrbitCalculationX(0.0119, 28.0);
-    uranus.position.z = OrbitCalculationZ(0.0119, 28.0);
+    uranus.position.x = OrbitCalculationX(0.0119, 32.0);
+    uranus.position.z = OrbitCalculationZ(0.0119, 32.0);
     uranus.position.y = OrbitInclination(0.0119, 0.80);
 
 
     //Neptune
     //Orbit
-    neptune.position.x = OrbitCalculationX(0.0061, 31.3);
-    neptune.position.z = OrbitCalculationZ(0.0061, 31.3);
+    neptune.position.x = OrbitCalculationX(0.0061, 38.3);
+    neptune.position.z = OrbitCalculationZ(0.0061, 38.3);
     neptune.position.y = OrbitInclination(0.0061, 1.80);
 
 
     //Pluto
     //Orbit
-    pluto.position.x = OrbitCalculationX(0.004, 40.1);
-    pluto.position.z = OrbitCalculationZ(0.004, 40.1);
+    pluto.position.x = OrbitCalculationX(0.004, 45.1);
+    pluto.position.z = OrbitCalculationZ(0.004, 45.1);
     pluto.position.y = OrbitInclination(0.004, 17.2);
 
     renderer.setClearColor(new THREE.Color().setRGB(1.0, 1.0, 1.0));
