@@ -69,7 +69,7 @@ function animate() {
 
 
     //Mechanical Calculations
-    //	
+    //  
     var OrbitCalculationX = function(velocityPartial, orbitalRadius) {
         return (Math.sin(Date.now() / 16000 * velocityPartial) * orbitalRadius);
     };
@@ -101,7 +101,7 @@ function animate() {
     earth.position.z = OrbitCalculationZ(1.00, 13.8);
     earth.position.y = OrbitInclination(1.00, 0.00);
     /*//Rotation
-			earth.rotation.y += 0.00005*/
+            earth.rotation.y += 0.00005*/
 
     //Mars
     //Orbit
@@ -185,72 +185,52 @@ function addObjectsToScene() { // Add your objects here
     var sunMaterial = new THREE.MeshBasicMaterial({
             "color": '#FFC966',
             "ambient": '#FFC966',
-            "emissive": '#FFC966',
-            "wireframe": true,
-            "wireframeLinewidth": 0.4
+            "emissive": '#FFC966'
         }),
         mercuryMaterial = new THREE.MeshBasicMaterial({
             "color": '#990000',
             "ambient": '#990000',
-            "emissive": '#990000',
-            "wireframe": true,
-            "wireframeLinewidth": 0.4
+            "emissive": '#990000'
         }),
         venusMaterial = new THREE.MeshBasicMaterial({
             "color": '#B27300',
             "ambient": '#B27300',
-            "emissive": '#B27300',
-            "wireframe": true,
-            "wireframeLinewidth": 0.4
+            "emissive": '#B27300'
         }),
         earthMaterial = new THREE.MeshBasicMaterial({
             "color": '#6D00F9',
             "ambient": '#6D00F9',
-            "emissive": '#6D00F9',
-            "wireframe": true,
-            "wireframeLinewidth": 0.4
+            "emissive": '#6D00F9'
         }),
         marsMaterial = new THREE.MeshBasicMaterial({
             "color": '#6B1919',
             "ambient": '#6B1919',
-            "emissive": '#6B1919',
-            "wireframe": true,
-            "wireframeLinewidth": 0.4
+            "emissive": '#6B1919'
         }),
         jupiterMaterial = new THREE.MeshBasicMaterial({
             "color": '#CCA37A',
             "ambient": '#CCA37A',
-            "emissive": '#CCA37A',
-            "wireframe": true,
-            "wireframeLinewidth": 0.4
+            "emissive": '#CCA37A'
         }),
         saturnMaterial = new THREE.MeshBasicMaterial({
             "color": '#7A6149',
             "ambient": '#7A6149',
-            "emissive": '#7A6149',
-            "wireframe": true,
-            "wireframeLinewidth": 0.4
+            "emissive": '#7A6149'
         }),
         uranusMaterial = new THREE.MeshBasicMaterial({
             "color": '#9999FF',
             "ambient": '#9999FF',
-            "emissive": '#9999FF',
-            "wireframe": true,
-            "wireframeLinewidth": 0.4
+            "emissive": '#9999FF'
         }),
         neptuneMaterial = new THREE.MeshBasicMaterial({
             "color": '#000099',
             "ambient": '#000099',
-            "emissive": '#000099',
-            "wireframe": true,
-            "wireframeLinewidth": 0.4
+            "emissive": '#000099'
         }),
         plutoMaterial = new THREE.MeshBasicMaterial({
             "color": '#311E21',
             "ambient": '#311E21',
-            "emissive": '#311E21',
-            "wireframe": true,
-            "wireframeLinewidth": 0.4
+            "emissive": '#311E21'
         });
 
     //OBJECTS
