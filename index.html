@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <title>holodev</title>
+    <script>
+        var _renderMode = 'SingleView';
+        var _nShaderMode = "basic";
+        var _messageFlag = 'MessageToIDE';
+        var _colorMode = "color"; //"monochrome"
+        var _camFov = 50.00;
+        var _camPosition = {x:0.00,y:0.00,z:600.00};
+        var _tarPosition = {x:0.00,y:0.00,z:-0.73};
+        var _holoScreenSize = 100.45;
+        var _up = 36.80;
+        var _down = -36.80;
+
+        //filter tuning parameters:
+        //supersample: [a 1 a]
+        //sharpen: [c b 1 b c]
+        var _filterA = 0.5;
+        var _filterB = -0.21;
+        var _filterC = -0.06;
+      
+        var _depthCompressionFactor = 0.5;
+    </script>
+    <script src="js/head.load.min.js"></script>
+    <script>
+        head.load("js/three.min.js", "js/LeiaCore-0.0.35.min.js","js/loadSTL2.js","js/helvetiker_bold.typeface.js","js/helvetiker_regular.typeface.js");
+      //you can also use the link below to always use the latest stable LeiaCore
+      //"https://s3.amazonaws.com/leiacore/LeiaCore-latest.min.js" 
+    </script>
+    <style type="text/css">
+        body {
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="yaw" style="display: none;">0</div>
+    <div id="pitch" style="display: none;">0</div>
+    <div id="roll" style="display: none;">0</div>
+</body>
+<!--add library here-->
+<script src="js/default.js"></script>
+
+</html>
