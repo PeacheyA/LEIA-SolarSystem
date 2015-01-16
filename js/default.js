@@ -182,52 +182,52 @@ function addObjectsToScene() { // Add your objects here
 
     //MATERIALS
     //Planets
-    var sunMaterial = new THREE.MeshBasicMaterial({
+    var sunMaterial = new THREE.MeshLambertMaterial({
             "color": '#FFC966',
             "ambient": '#FFC966',
             "emissive": '#FFC966'
         }),
-        mercuryMaterial = new THREE.MeshBasicMaterial({
+        mercuryMaterial = new THREE.MeshLambertMaterial({
             "color": '#990000',
             "ambient": '#990000',
             "emissive": '#990000'
         }),
-        venusMaterial = new THREE.MeshBasicMaterial({
+        venusMaterial = new THREE.MeshLambertMaterial({
             "color": '#B27300',
             "ambient": '#B27300',
             "emissive": '#B27300'
         }),
-        earthMaterial = new THREE.MeshBasicMaterial({
+        earthMaterial = new THREE.MeshLambertMaterial({
             "color": '#6D00F9',
             "ambient": '#6D00F9',
             "emissive": '#6D00F9'
         }),
-        marsMaterial = new THREE.MeshBasicMaterial({
+        marsMaterial = new THREE.MeshLambertMaterial({
             "color": '#6B1919',
             "ambient": '#6B1919',
             "emissive": '#6B1919'
         }),
-        jupiterMaterial = new THREE.MeshBasicMaterial({
+        jupiterMaterial = new THREE.MeshLambertMaterial({
             "color": '#CCA37A',
             "ambient": '#CCA37A',
             "emissive": '#CCA37A'
         }),
-        saturnMaterial = new THREE.MeshBasicMaterial({
+        saturnMaterial = new THREE.MeshLambertMaterial({
             "color": '#7A6149',
             "ambient": '#7A6149',
             "emissive": '#7A6149'
         }),
-        uranusMaterial = new THREE.MeshBasicMaterial({
+        uranusMaterial = new THREE.MeshLambertMaterial({
             "color": '#9999FF',
             "ambient": '#9999FF',
             "emissive": '#9999FF'
         }),
-        neptuneMaterial = new THREE.MeshBasicMaterial({
+        neptuneMaterial = new THREE.MeshLambertMaterial({
             "color": '#000099',
             "ambient": '#000099',
             "emissive": '#000099'
         }),
-        plutoMaterial = new THREE.MeshBasicMaterial({
+        plutoMaterial = new THREE.MeshLambertMaterial({
             "color": '#311E21',
             "ambient": '#311E21',
             "emissive": '#311E21'
