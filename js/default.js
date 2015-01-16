@@ -180,6 +180,12 @@ function addObjectsToScene() { // Add your objects here
         neptuneGeometry = new THREE.SphereGeometry(1.74, 20, 20),
         plutoGeometry = new THREE.SphereGeometry(0.17, 20, 20);
 
+    //Rings
+    var saturnRingGeometry1 = new THREE.RingGeometry( 2.92, 2.94, 20),
+        saturnRingGeometry2 = new THREE.RingGeometry( 3.00, 3.20, 20),
+        saturnRingGeometry3 = new THREE.RingGeometry( 3.20, 3.22, 20),
+        saturnRingGeometry4 = new THREE.RingGeometry( 3.24, 3.27, 20);
+
     //MATERIALS
     //Planets
     var sunMaterial = new THREE.MeshLambertMaterial({
@@ -233,6 +239,44 @@ function addObjectsToScene() { // Add your objects here
             "emissive": '#311E21'
         });
 
+    //Rings
+    var saturnRingMaterial1 = new THREE.MeshLambertMaterial(
+                        {
+                            "color" :'#7E7666',
+                            "side"  : THREE.DoubleSide,
+                            "ambient": '#7E7666',
+                            "emissive":'#7E7666',
+                            "transparent": true,
+                            "opacity": 0.4
+                        }),
+        saturnRingMaterial2 = new THREE.MeshLambertMaterial(
+                        {
+                            "color" :'#FDEECE',
+                            "side"  : THREE.DoubleSide,
+                            "ambient": '#FDEECE',
+                            "emissive":'#FDEECE',
+                            "transparent": true,
+                            "opacity": 0.3
+                        }),
+        saturnRingMaterial3 = new THREE.MeshLambertMaterial(
+                        {
+                            "color" :'#FDEECE',
+                            "side"  : THREE.DoubleSide,
+                            "ambient": '#FDEECE',
+                            "emissive":'#FDEECE',
+                            "transparent": true,
+                            "opacity": 0.2
+                        }),
+        saturnRingMaterial4 = new THREE.MeshLambertMaterial(
+                        {
+                            "color" :'#BDB29A',
+                            "side"  : THREE.DoubleSide,
+                            "ambient": '#BDB29A',
+                            "emissive":'#BDB29A',
+                            "transparent": true,
+                            "opacity": 0.9
+                        });
+        
     //OBJECTS
     //Planets
     var sunObject = new THREE.Mesh(sunGeometry, sunMaterial),
@@ -245,6 +289,12 @@ function addObjectsToScene() { // Add your objects here
         uranusObject = new THREE.Mesh(uranusGeometry, uranusMaterial),
         neptuneObject = new THREE.Mesh(neptuneGeometry, neptuneMaterial),
         plutoObject = new THREE.Mesh(plutoGeometry, plutoMaterial);
+
+    //Rings
+    var saturnRing1 = new THREE.Mesh(saturnRingGeometry1, saturnRingMaterial1),
+        saturnRing2 = new THREE.Mesh(saturnRingGeometry2, saturnRingMaterial2),
+        saturnRing3 = new THREE.Mesh(saturnRingGeometry3, saturnRingMaterial3),
+        saturnRing4 = new THREE.Mesh(saturnRingGeometry4, saturnRingMaterial4);
 
 
     //ADD STUFF
@@ -266,7 +316,7 @@ function addObjectsToScene() { // Add your objects here
     jupiter.add(jupiterObject);
     scene.add(jupiter);
 
-    saturn.add(saturnObject);
+    saturn.add(saturnObject, saturnRing1, saturnRing2, saturnRing3, saturnRing4);
     scene.add(saturn);
 
     uranus.add(uranusObject);
