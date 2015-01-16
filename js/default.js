@@ -284,4 +284,7 @@ function addObjectsToScene() { // Add your objects here
 function addLights() {
     //Add Lights Here
 
+    var light       = new THREE.PointLight( '#FFD633', 1,   50 );
+    sun.add(light);
+
 }
