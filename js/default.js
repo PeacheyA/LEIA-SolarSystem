@@ -268,11 +268,11 @@ function addObjectsToScene() { // Add your objects here
 				mercuryObject	= new THREE.Mesh(mercuryGeometry, 	mercuryMaterial),
 				venusObject 	= new THREE.Mesh(venusGeometry, 	venusMaterial),
 				earthObject 	= new THREE.Mesh(earthGeometry, 	earthMaterial),
-				marsObject 		= new THREE.Mesh(marsGeometry, 		marsMaterial);
-				jupiterObject 	= new THREE.Mesh(jupiterGeometry,	jupiterMaterial);
-				saturnObject 	= new THREE.Mesh(saturnGeometry,	saturnMaterial);
-				uranusObject 	= new THREE.Mesh(uranusGeometry, 	uranusMaterial);
-				neptuneObject 	= new THREE.Mesh(neptuneGeometry, 	neptuneMaterial);
+				marsObject 		= new THREE.Mesh(marsGeometry, 		marsMaterial),
+				jupiterObject 	= new THREE.Mesh(jupiterGeometry,	jupiterMaterial),
+				saturnObject 	= new THREE.Mesh(saturnGeometry,	saturnMaterial),
+				uranusObject 	= new THREE.Mesh(uranusGeometry, 	uranusMaterial),
+				neptuneObject 	= new THREE.Mesh(neptuneGeometry, 	neptuneMaterial),
 				plutoObject 	= new THREE.Mesh(plutoGeometry, 	plutoMaterial);
 
 
