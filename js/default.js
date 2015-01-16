@@ -122,8 +122,8 @@ function animate() {
 			saturn.position.z = OrbitCalculationZ( 0.034, 24.0 );
 			saturn.position.y = OrbitInclination ( 0.034, 2.50 );
 		//Axial Tilt
-			saturn.rotation.x = .2
-			saturn.rotation.z = .4
+			saturn.rotation.x = 0.2;
+			saturn.rotation.z = 0.4;
 
 
 	//Uranus=
@@ -187,7 +187,7 @@ function addObjectsToScene() { // Add your objects here
 								"ambient": '#FFC966',
 								"emissive": '#FFC966',
 								"wireframe": true,
-								"wireframeLinewidth": 1.2
+								"wireframeLinewidth": 0.4
 							}),
 				mercuryMaterial = new THREE.MeshBasicMaterial(
 							{
@@ -195,7 +195,7 @@ function addObjectsToScene() { // Add your objects here
 								"ambient": '#990000',
 								"emissive": '#990000',
 								"wireframe": true,
-								"wireframeLinewidth": 1.2
+								"wireframeLinewidth": 0.4
 							}),
 				venusMaterial 	= new THREE.MeshBasicMaterial(
 							{
@@ -203,7 +203,7 @@ function addObjectsToScene() { // Add your objects here
 								"ambient": '#B27300',
 								"emissive": '#B27300',
 								"wireframe": true,
-								"wireframeLinewidth": 1.2
+								"wireframeLinewidth": 0.4
 							}),
 				earthMaterial 	= new THREE.MeshBasicMaterial(
 							{ 
@@ -211,7 +211,7 @@ function addObjectsToScene() { // Add your objects here
 								"ambient": '#6D00F9',
 								"emissive": '#6D00F9',
 								"wireframe": true,
-								"wireframeLinewidth": 1.2
+								"wireframeLinewidth": 0.4
 							}),
 				marsMaterial 	= new THREE.MeshBasicMaterial(
 							{
@@ -219,7 +219,7 @@ function addObjectsToScene() { // Add your objects here
 								"ambient": '#6B1919',
 								"emissive": '#6B1919',
 								"wireframe": true,
-								"wireframeLinewidth": 1.2
+								"wireframeLinewidth": 0.4
 							}),
 				jupiterMaterial = new THREE.MeshBasicMaterial(
 							{
@@ -227,7 +227,7 @@ function addObjectsToScene() { // Add your objects here
 								"ambient": '#CCA37A',
 								"emissive": '#CCA37A',
 								"wireframe": true,
-								"wireframeLinewidth": 1.2
+								"wireframeLinewidth": 0.4
 							}),
 				saturnMaterial = new THREE.MeshBasicMaterial(
 							{
@@ -235,7 +235,7 @@ function addObjectsToScene() { // Add your objects here
 								"ambient": '#7A6149',
 								"emissive": '#7A6149',
 								"wireframe": true,
-								"wireframeLinewidth": 1.2
+								"wireframeLinewidth": 0.4
 							}),
 				uranusMaterial = new THREE.MeshBasicMaterial(
 							{
@@ -243,7 +243,7 @@ function addObjectsToScene() { // Add your objects here
 								"ambient": '#9999FF',
 								"emissive": '#9999FF',
 								"wireframe": true,
-								"wireframeLinewidth": 1.2
+								"wireframeLinewidth": 0.4
 							}),
 				neptuneMaterial = new THREE.MeshBasicMaterial(
 							{
@@ -251,7 +251,7 @@ function addObjectsToScene() { // Add your objects here
 								"ambient": '#000099',
 								"emissive": '#000099',
 								"wireframe": true,
-								"wireframeLinewidth": 1.2
+								"wireframeLinewidth": 0.4
 							}),
 				plutoMaterial = new THREE.MeshBasicMaterial(
 							{
@@ -259,7 +259,7 @@ function addObjectsToScene() { // Add your objects here
 								"ambient": '#311E21',
 								"emissive": '#311E21',
 								"wireframe": true,
-								"wireframeLinewidth": 1.2
+								"wireframeLinewidth": 0.4
 							});
 
 	//OBJECTS
