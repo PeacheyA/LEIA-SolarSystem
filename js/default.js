@@ -185,72 +185,52 @@ function addObjectsToScene() { // Add your objects here
     var sunMaterial = new THREE.MeshBasicMaterial({
             "color": '#FFC966',
             "ambient": '#FFC966',
-            "emissive": '#FFC966',
-            "map": THREE.ImageUtils.loadTexture(
-                "resources/sun.png")
+            "emissive": '#FFC966'
         }),
         mercuryMaterial = new THREE.MeshBasicMaterial({
             "color": '#990000',
             "ambient": '#990000',
-            "emissive": '#990000',
-            "map": THREE.ImageUtils.loadTexture(
-                "resources/mercury.png")
+            "emissive": '#990000'
         }),
         venusMaterial = new THREE.MeshBasicMaterial({
             "color": '#B27300',
             "ambient": '#B27300',
-            "emissive": '#B27300',
-            "map": THREE.ImageUtils.loadTexture(
-                "resources/venus.png")
+            "emissive": '#B27300'
         }),
         earthMaterial = new THREE.MeshBasicMaterial({
             "color": '#6D00F9',
             "ambient": '#6D00F9',
-            "emissive": '#6D00F9',
-            "map": THREE.ImageUtils.loadTexture(
-                "resources/earth.png")
+            "emissive": '#6D00F9'
         }),
         marsMaterial = new THREE.MeshBasicMaterial({
             "color": '#6B1919',
             "ambient": '#6B1919',
-            "emissive": '#6B1919',
-            "map": THREE.ImageUtils.loadTexture(
-                "resources/mars.png")
+            "emissive": '#6B1919'
         }),
         jupiterMaterial = new THREE.MeshBasicMaterial({
             "color": '#CCA37A',
             "ambient": '#CCA37A',
-            "emissive": '#CCA37A',
-            "map": THREE.ImageUtils.loadTexture(
-                "resources/jupiter.png")
+            "emissive": '#CCA37A'
         }),
         saturnMaterial = new THREE.MeshBasicMaterial({
             "color": '#7A6149',
             "ambient": '#7A6149',
-            "emissive": '#7A6149',
-            "map": THREE.ImageUtils.loadTexture(
-                "resources/saturn.png")
+            "emissive": '#7A6149'
         }),
         uranusMaterial = new THREE.MeshBasicMaterial({
             "color": '#9999FF',
             "ambient": '#9999FF',
-            "emissive": '#9999FF',
-            "map": THREE.ImageUtils.loadTexture(
-                "resources/uranus.png")
+            "emissive": '#9999FF'
         }),
         neptuneMaterial = new THREE.MeshBasicMaterial({
             "color": '#000099',
             "ambient": '#000099',
-            "emissive": '#000099',
-            "map": THREE.ImageUtils.loadTexture(
-                "resources/neptune.png")
+            "emissive": '#000099'
         }),
         plutoMaterial = new THREE.MeshBasicMaterial({
             "color": '#311E21',
             "ambient": '#311E21',
-            "emissive": '#311E21',
-            "map": THREE.ImageUtils.loadTexture(
-                "resources/pluto.png")
+            "emissive": '#311E21'
         });
 
     //OBJECTS
